@@ -3,11 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = os.getenv("API_ID", "").strip()
-API_HASH = os.getenv("API_HASH", "").strip()
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-DATABASE_URL = os.getenv("DATABASE_URL", "").strip() # Not a necessary variable anymore but you can add to get stats
-MUST_JOIN = os.getenv("MUST_JOIN", "")
+API_ID = os.getenv("API_ID", "28542813").strip()
+API_HASH = os.getenv("API_HASH", "02ce7c339f7776844ff4ab03da338ccd").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6796476756:AAGvgQXojSoDdWFYj_AoPO1wSgn-Jfg9-x8").strip()
+DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://yashsing2008:12345678yash@cluster0.j8n5cqz.mongodb.net/?retryWrites=true&w=majority").strip() # Not a necessary variable anymore but you can add to get stats
+MUST_JOIN = os.getenv("MUST_JOIN", "https://t.me/YS_SUPPORT_CHAT")
 
 if not API_ID:
     raise SystemExit("No API_ID found. Exiting...")
